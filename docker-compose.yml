@@ -16,7 +16,7 @@ services:
 
   database:
     container_name: database
-    image: postgres:10.6-alpine
+    image: postgres:9.6-alpine
     volumes:
       - postgres-data:/var/lib/postgresql/data
 

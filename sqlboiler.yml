@@ -1,0 +1,7 @@
+psql:
+  dbname: postgres
+  host: database
+  user: postgres
+  sslmode: disable
+  whitelist:
+    - products
