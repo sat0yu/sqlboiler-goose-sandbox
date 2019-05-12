@@ -5,3 +5,4 @@ psql:
   sslmode: disable
   whitelist:
     - products
+    - orders
