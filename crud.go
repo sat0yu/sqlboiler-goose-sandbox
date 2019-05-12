@@ -69,6 +69,9 @@ func crud() {
 		fmt.Println(p)
 	}
 
-	rowAffected, err := models.Products().DeleteAll(ctx, db)
-	fmt.Println("Deleted", rowAffected, "records")
+	var rowAffected int64
+	rowAffected, err = models.Products().DeleteAll(ctx, db)
+	fmt.Println("Deleted", rowAffected, "records(products)")
+	rowAffected, err = models.Orders().DeleteAll(ctx, db)
+	fmt.Println("Deleted", rowAffected, "records(orders)")
 }
